@@ -13,6 +13,13 @@
 		11DBA9631BE35274003A70CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DBA9611BE35274003A70CA /* Main.storyboard */; };
 		11DBA9651BE35274003A70CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11DBA9641BE35274003A70CA /* Assets.xcassets */; };
 		11DBA9681BE35274003A70CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DBA9661BE35274003A70CA /* LaunchScreen.storyboard */; };
+		11DBA9791BE3528D003A70CA /* XWBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DBA9711BE3528D003A70CA /* XWBadgeView.m */; };
+		11DBA97A1BE3528D003A70CA /* XWDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DBA9731BE3528D003A70CA /* XWDropdownMenu.m */; };
+		11DBA97B1BE3528D003A70CA /* XWDropdownMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DBA9741BE3528D003A70CA /* XWDropdownMenu.xib */; };
+		11DBA97C1BE3528D003A70CA /* XWDropdownMenuMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DBA9761BE3528D003A70CA /* XWDropdownMenuMainCell.m */; };
+		11DBA97D1BE3528D003A70CA /* XWDropdownMenuSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DBA9781BE3528D003A70CA /* XWDropdownMenuSubCell.m */; };
+		11DBA9801BE354B9003A70CA /* collect_icon_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11DBA97E1BE354B9003A70CA /* collect_icon_selected@2x.png */; };
+		11DBA9811BE354B9003A70CA /* collect_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11DBA97F1BE354B9003A70CA /* collect_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,17 @@
 		11DBA9641BE35274003A70CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11DBA9671BE35274003A70CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11DBA9691BE35274003A70CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11DBA9701BE3528D003A70CA /* XWBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWBadgeView.h; sourceTree = "<group>"; };
+		11DBA9711BE3528D003A70CA /* XWBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWBadgeView.m; sourceTree = "<group>"; };
+		11DBA9721BE3528D003A70CA /* XWDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDropdownMenu.h; sourceTree = "<group>"; };
+		11DBA9731BE3528D003A70CA /* XWDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDropdownMenu.m; sourceTree = "<group>"; };
+		11DBA9741BE3528D003A70CA /* XWDropdownMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XWDropdownMenu.xib; sourceTree = "<group>"; };
+		11DBA9751BE3528D003A70CA /* XWDropdownMenuMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDropdownMenuMainCell.h; sourceTree = "<group>"; };
+		11DBA9761BE3528D003A70CA /* XWDropdownMenuMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDropdownMenuMainCell.m; sourceTree = "<group>"; };
+		11DBA9771BE3528D003A70CA /* XWDropdownMenuSubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDropdownMenuSubCell.h; sourceTree = "<group>"; };
+		11DBA9781BE3528D003A70CA /* XWDropdownMenuSubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDropdownMenuSubCell.m; sourceTree = "<group>"; };
+		11DBA97E1BE354B9003A70CA /* collect_icon_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "collect_icon_selected@2x.png"; path = "XWDropdownMenu/collect_icon_selected@2x.png"; sourceTree = "<group>"; };
+		11DBA97F1BE354B9003A70CA /* collect_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "collect_icon@2x.png"; path = "XWDropdownMenu/collect_icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 		11DBA9571BE35274003A70CA /* XWDropdownMenu */ = {
 			isa = PBXGroup;
 			children = (
+				11DBA96F1BE3528D003A70CA /* XWDropdownMenu */,
 				11DBA95B1BE35274003A70CA /* AppDelegate.h */,
 				11DBA95C1BE35274003A70CA /* AppDelegate.m */,
 				11DBA95E1BE35274003A70CA /* ViewController.h */,
@@ -74,9 +93,27 @@
 		11DBA9581BE35274003A70CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				11DBA97E1BE354B9003A70CA /* collect_icon_selected@2x.png */,
+				11DBA97F1BE354B9003A70CA /* collect_icon@2x.png */,
 				11DBA9591BE35274003A70CA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11DBA96F1BE3528D003A70CA /* XWDropdownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				11DBA9701BE3528D003A70CA /* XWBadgeView.h */,
+				11DBA9711BE3528D003A70CA /* XWBadgeView.m */,
+				11DBA9721BE3528D003A70CA /* XWDropdownMenu.h */,
+				11DBA9731BE3528D003A70CA /* XWDropdownMenu.m */,
+				11DBA9741BE3528D003A70CA /* XWDropdownMenu.xib */,
+				11DBA9751BE3528D003A70CA /* XWDropdownMenuMainCell.h */,
+				11DBA9761BE3528D003A70CA /* XWDropdownMenuMainCell.m */,
+				11DBA9771BE3528D003A70CA /* XWDropdownMenuSubCell.h */,
+				11DBA9781BE3528D003A70CA /* XWDropdownMenuSubCell.m */,
+			);
+			path = XWDropdownMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +174,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DBA9811BE354B9003A70CA /* collect_icon@2x.png in Resources */,
+				11DBA97B1BE3528D003A70CA /* XWDropdownMenu.xib in Resources */,
 				11DBA9681BE35274003A70CA /* LaunchScreen.storyboard in Resources */,
 				11DBA9651BE35274003A70CA /* Assets.xcassets in Resources */,
+				11DBA9801BE354B9003A70CA /* collect_icon_selected@2x.png in Resources */,
 				11DBA9631BE35274003A70CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				11DBA9601BE35274003A70CA /* ViewController.m in Sources */,
+				11DBA9791BE3528D003A70CA /* XWBadgeView.m in Sources */,
 				11DBA95D1BE35274003A70CA /* AppDelegate.m in Sources */,
+				11DBA97C1BE3528D003A70CA /* XWDropdownMenuMainCell.m in Sources */,
+				11DBA97D1BE3528D003A70CA /* XWDropdownMenuSubCell.m in Sources */,
+				11DBA97A1BE3528D003A70CA /* XWDropdownMenu.m in Sources */,
 				11DBA95A1BE35274003A70CA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
