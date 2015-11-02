@@ -22,8 +22,8 @@
  */
 - (NSString *)dropdownMenu:(XWDropdownMenu *)dropdownMenu titleForRowInMainTable:(NSInteger)row;
 /**
- *  主表格每一行的子数据 数组
- *  @param row          行号
+ *  主表格每一行的子数据 根据数组显示内容
+ *  @param row          主表行号
  */
 - (NSArray *)dropdownMenu:(XWDropdownMenu *)dropdownMenu subdataForRowInMainTable:(NSInteger)row;
 @optional
@@ -33,17 +33,17 @@
  */
 - (NSString *)dropdownMenu:(XWDropdownMenu *)dropdownMenu countForRowInMainTable:(NSInteger)row;
 /**
- *  子表格每一行子数据 分类数量
- *  @param row          行号
+ *  子表格每一行子数据 分类数量 根据数组显示提示数字
+ *  @param row          主表行号
  */
-- (NSArray *)dropdownMenu:(XWDropdownMenu *)dropdownMenu subdataCountForRowInSubTable:(NSInteger)row;
+- (NSArray *)dropdownMenu:(XWDropdownMenu *)dropdownMenu subdataCountForRowInMainTable:(NSInteger)row;
 /**
  *  主表格每一行的图标
  *  @param row          行号
  */
 - (NSString *)dropdownMenu:(XWDropdownMenu *)dropdownMenu iconForRowInMainTable:(NSInteger)row;
 /**
- *  子表格每一行的选中图标
+ *  主表格每一行的选中图标
  *  @param row          行号
  */
 - (NSString *)dropdownMenu:(XWDropdownMenu *)dropdownMenu selectedIconForRowInMainTable:(NSInteger)row;
@@ -68,6 +68,6 @@
 
 /**主表被选中的字体颜色，默认是黑色*/
 @property (strong, nonatomic) UIColor *selectedRowTextColor;
-/**该属性设置成YES，主表比较小*/
+/**该属性设置成YES，主表较小*/
 @property (nonatomic, assign)BOOL isMainTableSmall;
 @end

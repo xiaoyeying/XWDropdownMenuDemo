@@ -101,11 +101,11 @@
             cell.textLabel.text = subdata[indexPath.row];
         }
         
-        if ([self.dataSource respondsToSelector:@selector(dropdownMenu:subdataCountForRowInSubTable:)]) {
+        if ([self.dataSource respondsToSelector:@selector(dropdownMenu:subdataCountForRowInMainTable:)]) {
             XWBadgeView *badgeView = [[XWBadgeView alloc] initWithFrame:CGRectMake(0, 0, 0, 13)];
             badgeView.backgroundColor  = XWColor(205, 205, 205);
             badgeView.textColor =  [UIColor whiteColor];
-            NSArray *subCount = [self.dataSource dropdownMenu:self subdataCountForRowInSubTable:self.selectedMainRow];
+            NSArray *subCount = [self.dataSource dropdownMenu:self subdataCountForRowInMainTable:self.selectedMainRow];
             badgeView.font = [UIFont systemFontOfSize:12];
             badgeView.badgeValue = subCount[indexPath.row];
             cell.accessoryView = badgeView;

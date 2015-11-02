@@ -102,7 +102,7 @@
 }
 
 //从表行的圆点提示个数
--(NSArray *)dropdownMenu:(XWDropdownMenu *)dropdownMenu subdataCountForRowInSubTable:(NSInteger)row
+-(NSArray *)dropdownMenu:(XWDropdownMenu *)dropdownMenu subdataCountForRowInMainTable:(NSInteger)row
 {
     return [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",nil];
 }
